@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YKY Studio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'VCR';
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2');
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
+            background: #000;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            border: 2px solid #fff;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 2rem;
+            font-weight: normal;
+            letter-spacing: 3px;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #fff;
+            margin: 20px 0;
+        }
+
+        .projects {
+            list-style: none;
+        }
+
+        .projects li {
+            margin: 20px 0;
+        }
+
+        .project-link {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border: 1px solid #fff;
+            transition: all 0.2s;
+            font-size: 1rem;
+        }
+
+        .project-link:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        .project-link:before {
+            content: "> ";
+        }
+
+        .project-title {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .project-description {
+            font-size: 0.75rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>YKY STUDIO</h1>
+        <p class="subtitle">Projects Archive</p>
+        
+        <hr>
+        
+        <ul class="projects">
+            <li>
+                <a href="https://hunch.app" class="project-link">
+                    <div class="project-title">HUNCH</div>
+                    <div class="project-description">Sports betting with LLMs.</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://artificialcasting.com" class="project-link">
+                    <div class="project-title">ARTIFICIAL CASTING</div>
+                    <div class="project-description">Casting session for your AI film.</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://leftify.app" class="project-link">
+                    <div class="project-title">LEFTIFY</div>
+                    <div class="project-description">Tutorial videos, flipped for lefties.</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://thotblocker.app" class="project-link">
+                    <div class="project-title">THOTBLOCKER</div>
+                    <div class="project-description">Get the skin out your social feed.</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://biblical.app" class="project-link">
+                    <div class="project-title">BIBLICAL</div>
+                    <div class="project-description">Open-sourced bible study.</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
